@@ -45,7 +45,8 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-            android:windowSoftInputMode="stateAlwaysHidden" />
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            </activity>
         <activity
             android:name="com.limonica.bookstoreinventory.DatabaseActivity"
             android:label="@string/title_activity_database" >

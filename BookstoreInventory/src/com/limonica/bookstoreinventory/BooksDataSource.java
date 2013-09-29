@@ -32,7 +32,7 @@ public class BooksDataSource {
 		ContentValues values = new ContentValues();
 		values.put(MySQLiteHelper.COLUMN_NEWBOOKS, book);
 		long insertISBN = database.insert(MySQLiteHelper.TABLE_NEWBOOKS, null, values);
-		Cursor cursor = database.query(MySQLiteHelper.TABLE_NEWBOOKS, allColumns, MySQLiteHelper.COLUMN_ID + " = " insertISBN, null, null, null, null);
+		Cursor cursor = database.query(MySQLiteHelper.TABLE_NEWBOOKS, allColumns, MySQLiteHelper.COLUMN_ID + " = " + insertISBN, null, null, null, null);
 		cursor.moveToFirst();
 		Book newBook = cursorToBook(cursor);
 		cursor.close();

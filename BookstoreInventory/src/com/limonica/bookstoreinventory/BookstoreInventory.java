@@ -18,8 +18,7 @@ public class BookstoreInventory extends Activity {
 	private Handler  handler = new Handler();
     private TextView txtScanResult;
     private ArrayList<String> newBooks = new ArrayList<String>();
-    private View nB = findViewById(R.array.new_books);
-
+   
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +42,7 @@ public class BookstoreInventory extends Activity {
         btnSend.setOnClickListener(new OnClickListener() {
         	@Override
         	public void onClick(View v) {
-        		Intent showList = new Intent(BookstoreInventory.this, ListNewBooks.class);
+        		Intent showList = new Intent(BookstoreInventory.this, DatabaseActivity.class);
         		startActivity(showList);
         	}
         });
